@@ -1398,7 +1398,7 @@ static inline void vpx2_isa_sejmp(){
 static inline void vpx2_isa_cjmp(){
     //===========================================
     //General conditional jump.
-    //Calls corresponding jmp condition instruction dependong in provided argument.
+    //Calls corresponding jmp condition instruction depending in provided argument.
     //WARNING: this is almost fully useless. So it may be depracated.
     //===========================================
     //C syntax: switch(condition){case 0: ...}
