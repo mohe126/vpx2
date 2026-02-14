@@ -1732,7 +1732,7 @@ static inline uint8_t vpx2_exec(){
 
     switch(opcode){
         default: {
-            //Uusally should log errors and whatever
+            //Usually should log errors and whatever
             //This is unsafe though, No errors
             return 0; //NOP
             break;
