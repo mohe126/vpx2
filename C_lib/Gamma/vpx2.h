@@ -308,7 +308,7 @@ static inline void vpx2_isa_cpuid(){
     //Gets the value of the CPU-ID and information about it.
     //===========================================
     //C syntax: registers[r1] = cpu_id;
-    //Psuedocode: r1 <- cpu_id
+    //Pseudocode: r1 <- cpu_id
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -322,7 +322,7 @@ static inline void vpx2_isa_mov(){
     //Move value in r1 to r2.
     //===========================================
     //C syntax: registers[r1] = registers[r2];
-    //Psuedocode: r1 <- r2
+    //Pseudocode: r1 <- r2
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -337,7 +337,7 @@ static inline void vpx2_isa_movi(){
     //Move immediate value to r1
     //===========================================
     //C syntax: registers[r1] = imm;
-    //Psuedocode: r1 <- imm
+    //Pseudocode: r1 <- imm
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -349,7 +349,7 @@ static inline void vpx2_isa_inc(){
     //Increment value of r1
     //===========================================
     //C syntax: registers[r1] = registers[r1]++;
-    //Psuedocode: r1 <- r1 + 1
+    //Pseudocode: r1 <- r1 + 1
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -361,7 +361,7 @@ static inline void vpx2_isa_dec(){
     //Decrement value of r1
     //===========================================
     //C syntax: registers[r1] = registers[r1]--;
-    //Psuedocode: r1 <- r1 - 1
+    //Pseudocode: r1 <- r1 - 1
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -374,7 +374,7 @@ static inline void vpx2_isa_or(){
     //Do an OR operation on r2 and r3, write to r1
     //===========================================
     //C syntax: registers[r1] = registers[r2] | registers[r3];
-    //Psuedocode: r1 <- r2 or r3
+    //Pseudocode: r1 <- r2 or r3
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -392,7 +392,7 @@ static inline void vpx2_isa_xor(){
     //Do an XOR operation on r2 and r3, write to r1
     //===========================================
     //C syntax: registers[r1] = registers[r2] ^ registers[r3];
-    //Psuedocode: r1 <- r2 xor r3
+    //Pseudocode: r1 <- r2 xor r3
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -410,7 +410,7 @@ static inline void vpx2_isa_and(){
     //Do an AND operation on r2 and r3, write to r1
     //===========================================
     //C syntax: registers[r1] = registers[r2] & registers[r3];
-    //Psuedocode: r1 <- r2 and r3
+    //Pseudocode: r1 <- r2 and r3
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -428,7 +428,7 @@ static inline void vpx2_isa_not(){
     //Do a NOT operation on r2 and write to r1
     //===========================================
     //C syntax: registers[r1] = ~registers[r2];
-    //Psuedocode: r1 <- not r2
+    //Pseudocode: r1 <- not r2
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -445,7 +445,7 @@ static inline void vpx2_isa_ori(){
     //Do an OR operation on r2 and immediate, write to r1
     //===========================================
     //C syntax: registers[r1] = registers[r2] | imm;
-    //Psuedocode: r1 <- r2 or imm
+    //Pseudocode: r1 <- r2 or imm
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -462,7 +462,7 @@ static inline void vpx2_isa_xori(){
     //Do an XOR operation on r2 and immediate, write to r1
     //===========================================
     //C syntax: registers[r1] = registers[r2] ^ imm;
-    //Psuedocode: r1 <- r2 xor imm
+    //Pseudocode: r1 <- r2 xor imm
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -479,7 +479,7 @@ static inline void vpx2_isa_andi(){
     //Do an AND operation on r2 and immediate, write to r1
     //===========================================
     //C syntax: registers[r1] = registers[r2] & imm;
-    //Psuedocode: r1 <- r2 and imm
+    //Pseudocode: r1 <- r2 and imm
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -497,7 +497,7 @@ static inline void vpx2_isa_sll(){
     //Shift logical left of r2 by r3 and write to r1
     //===========================================
     //C syntax: registers[r1] = registers[r2] << registers[r3];
-    //Psuedocode: r1 <- r2 << r3
+    //Pseudocode: r1 <- r2 << r3
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -515,7 +515,7 @@ static inline void vpx2_isa_srl(){
     //Shift logical right of r2 by r3 and write to r1
     //===========================================
     //C syntax: registers[r1] = registers[r2] >> registers[r3];
-    //Psuedocode: r1 <- r2 >> r3
+    //Pseudocode: r1 <- r2 >> r3
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -535,7 +535,7 @@ static inline void vpx2_isa_sra(){
     //might add inline assembly version if this doesn't work. with preproccessor checks
     //===========================================
     //C syntax: registers[r1] = registers[r2] >> registers[r3];
-    //Psuedocode: r1 <- r2 >> r3
+    //Pseudocode: r1 <- r2 >> r3
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -554,7 +554,7 @@ static inline void vpx2_isa_slli(){
     //Immediate Shift logical left of r2 by imm and write to r1
     //===========================================
     //C syntax: registers[r1] = registers[r2] << imm;
-    //Psuedocode: r1 <- r2 << imm
+    //Pseudocode: r1 <- r2 << imm
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -571,7 +571,7 @@ static inline void vpx2_isa_srli(){
     //Immediate Shift logical right of r2 by imm and write to r1
     //===========================================
     //C syntax: registers[r1] = registers[r2] >> imm;
-    //Psuedocode: r1 <- r2 >> imm
+    //Pseudocode: r1 <- r2 >> imm
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -591,7 +591,7 @@ static inline void vpx2_isa_srai(){
     //might add inline assembly version if this doesn't work. with preproccessor checks
     //===========================================
     //C syntax: registers[r1] = registers[r2] >> imm;
-    //Psuedocode: r1 <- r2 >> imm
+    //Pseudocode: r1 <- r2 >> imm
     //===========================================
 
     uint8_t r1 = vpx2_mem_f8();
@@ -609,7 +609,7 @@ static inline void vpx2_isa_add(){
     //Add r2 and r3, write result to r1. (No carry)
     //===========================================
     //C syntax: registers[r1] = registers[r2] + registers[r3];
-    //Psuedocode: r1 <- r2 + r3
+    //Pseudocode: r1 <- r2 + r3
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -626,7 +626,7 @@ static inline void vpx2_isa_sub(){
     //Subtract r2 by r3, write result to r1.
     //===========================================
     //C syntax: registers[r1] = registers[r2] - registers[r3];
-    //Psuedocode: r1 <- r2 - r3
+    //Pseudocode: r1 <- r2 - r3
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -643,7 +643,7 @@ static inline void vpx2_isa_mul(){
     //Multiply r2 by r3, write result to r1.
     //===========================================
     //C syntax: registers[r1] = registers[r2] * registers[r3];
-    //Psuedocode: r1 <- r2 * r3
+    //Pseudocode: r1 <- r2 * r3
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -660,7 +660,7 @@ static inline void vpx2_isa_udiv(){
     //Divide r2 by r3, write result to r1. (Unsigned)
     //===========================================
     //C syntax: registers[r1] = registers[r2] / registers[r3];
-    //Psuedocode: r1 <- r2 / r3
+    //Pseudocode: r1 <- r2 / r3
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -685,7 +685,7 @@ static inline void vpx2_isa_sdiv(){
     //Divide r2 by r3, write result to r1. (Signed)
     //===========================================
     //C syntax: registers[r1] = registers[r2] / registers[r3];
-    //Psuedocode: r1 <- r2 / r3
+    //Pseudocode: r1 <- r2 / r3
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -717,7 +717,7 @@ static inline void vpx2_isa_urem(){
     //Modulo/Remainder of r2 by r3, write result to r1. (Unsigned)
     //===========================================
     //C syntax: registers[r1] = registers[r2] % registers[r3];
-    //Psuedocode: r1 <- r2 % r3
+    //Pseudocode: r1 <- r2 % r3
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -742,7 +742,7 @@ static inline void vpx2_isa_srem(){
     //Modulo/Remainder of r2 by r3, write result to r1. (Signed)
     //===========================================
     //C syntax: registers[r1] = registers[r2] % registers[r3];
-    //Psuedocode: r1 <- r2 % r3
+    //Pseudocode: r1 <- r2 % r3
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -775,7 +775,7 @@ static inline void vpx2_isa_addi(){
     //Add r2 and imm, write result to r1. (No carry)
     //===========================================
     //C syntax: registers[r1] = registers[r2] + imm;
-    //Psuedocode: r1 <- r2 + imm
+    //Pseudocode: r1 <- r2 + imm
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -791,7 +791,7 @@ static inline void vpx2_isa_subi(){
     //Subtract r2 and imm, write result to r1.
     //===========================================
     //C syntax: registers[r1] = registers[r2] - imm;
-    //Psuedocode: r1 <- r2 - imm
+    //Pseudocode: r1 <- r2 - imm
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -807,7 +807,7 @@ static inline void vpx2_isa_muli(){
     //Multiply r2 by imm, write result to r1.
     //===========================================
     //C syntax: registers[r1] = registers[r2] * imm;
-    //Psuedocode: r1 <- r2 * imm
+    //Pseudocode: r1 <- r2 * imm
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -823,7 +823,7 @@ static inline void vpx2_isa_udivi(){
     //Divide r2 by imm, write result to r1. (Unsigned)
     //===========================================
     //C syntax: registers[r1] = registers[r2] / imm;
-    //Psuedocode: r1 <- r2 / imm
+    //Pseudocode: r1 <- r2 / imm
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -846,7 +846,7 @@ static inline void vpx2_isa_sdivi(){
     //Divide r2 by imm, write result to r1. (Signed)
     //===========================================
     //C syntax: registers[r1] = registers[r2] / imm;
-    //Psuedocode: r1 <- r2 / imm
+    //Pseudocode: r1 <- r2 / imm
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -876,7 +876,7 @@ static inline void vpx2_isa_uremi(){
     //Modulo/Remainder of r2 by imm, write result to r1. (Unsigned)
     //===========================================
     //C syntax: registers[r1] = registers[r2] % imm;
-    //Psuedocode: r1 <- r2 % imm
+    //Pseudocode: r1 <- r2 % imm
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -899,7 +899,7 @@ static inline void vpx2_isa_sremi(){
     //Modulo/Remainder of r2 by imm, write result to r1. (Signed)
     //===========================================
     //C syntax: registers[r1] = registers[r2] % imm;
-    //Psuedocode: r1 <- r2 % imm
+    //Pseudocode: r1 <- r2 % imm
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -930,7 +930,7 @@ static inline void vpx2_isa_ld8(){
     //Load 1B to r1 based on address in r2 + PC (Relative offset)
     //===========================================
     //C syntax: registers[r1] = mem_r8(registers[r2] + registers[PC]);
-    //Psuedocode: r1 <- mem[r2 + PC]
+    //Pseudocode: r1 <- mem[r2 + PC]
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -948,7 +948,7 @@ static inline void vpx2_isa_ld16(){
     //Load 2B to r1 based on address in r2 + PC (Relative offset)
     //===========================================
     //C syntax: registers[r1] = mem_r16(registers[r2] + registers[PC]);
-    //Psuedocode: r1 <- mem[r2 + PC]
+    //Pseudocode: r1 <- mem[r2 + PC]
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -966,7 +966,7 @@ static inline void vpx2_isa_ld32(){
     //Load 4B to r1 based on address in r2 + PC (Relative offset)
     //===========================================
     //C syntax: registers[r1] = mem_r32(registers[r2] + registers[PC]);
-    //Psuedocode: r1 <- mem[r2 + PC]
+    //Pseudocode: r1 <- mem[r2 + PC]
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -985,7 +985,7 @@ static inline void vpx2_isa_st8(){
     //Stores 1B from r1 (LSB) to address r2 + PC (Relative offset)
     //===========================================
     //C syntax: mem_w8(registers[r2] + registers[PC], registers[r1] & 0xff);
-    //Psuedocode: mem[r2 + PC] <- r1
+    //Pseudocode: mem[r2 + PC] <- r1
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -1003,7 +1003,7 @@ static inline void vpx2_isa_st16(){
     //Stores 2B from r1 (LSW) to address r2 + PC (Relative offset)
     //===========================================
     //C syntax: mem_w16(registers[r2] + registers[PC], registers[r1] & 0xffff);
-    //Psuedocode: mem[r2 + PC] <- r1
+    //Pseudocode: mem[r2 + PC] <- r1
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -1021,7 +1021,7 @@ static inline void vpx2_isa_st32(){
     //Stores 4B from r1 (LSW) to address r2 + PC (Relative offset)
     //===========================================
     //C syntax: mem_w32(registers[r2] + registers[PC], registers[r1] & 0xffffffff);
-    //Psuedocode: mem[r2 + PC] <- r1
+    //Pseudocode: mem[r2 + PC] <- r1
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -1040,7 +1040,7 @@ static inline void vpx2_isa_ld8r(){
     //Load 1B to r1 based on address in r2 + imm (Relative/Absolute offset)
     //===========================================
     //C syntax: registers[r1] = mem_r8(registers[r2] + imm);
-    //Psuedocode: r1 <- mem[r2 + imm]
+    //Pseudocode: r1 <- mem[r2 + imm]
     //===========================================
 
     
@@ -1058,7 +1058,7 @@ static inline void vpx2_isa_ld16r(){
     //Load 2B to r1 based on address in r2 + imm (Relative/Absolute offset)
     //===========================================
     //C syntax: registers[r1] = mem_r16(registers[r2] + imm);
-    //Psuedocode: r1 <- mem[r2 + imm]
+    //Pseudocode: r1 <- mem[r2 + imm]
     //===========================================
 
     
@@ -1076,7 +1076,7 @@ static inline void vpx2_isa_ld32r(){
     //Load 4B to r1 based on address in r2 + imm (Relative/Absolute offset)
     //===========================================
     //C syntax: registers[r1] = mem_r32(registers[r2] + imm);
-    //Psuedocode: r1 <- mem[r2 + imm]
+    //Pseudocode: r1 <- mem[r2 + imm]
     //===========================================
 
     
@@ -1095,7 +1095,7 @@ static inline void vpx2_isa_st8r(){
     //Stores 1B from r1 (LSB) to address r2 + imm (Relative/Absolute offset)
     //===========================================
     //C syntax: mem_w8(registers[r2] + imm, registers[r1] & 0xff);
-    //Psuedocode: mem[r2 + imm] <- r1
+    //Pseudocode: mem[r2 + imm] <- r1
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -1111,7 +1111,7 @@ static inline void vpx2_isa_st16r(){
     //Stores 2B from r1 (LSW) to address r2 + imm (Relative/Absolute offset)
     //===========================================
     //C syntax: mem_w16(registers[r2] + imm, registers[r1] & 0xffff);
-    //Psuedocode: mem[r2 + imm] <- r1
+    //Pseudocode: mem[r2 + imm] <- r1
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -1127,7 +1127,7 @@ static inline void vpx2_isa_st32r(){
     //Stores 4B from r1 to address r2 + imm (Relative/Absolute offset)
     //===========================================
     //C syntax: mem_w32(registers[r2] + imm, registers[r1]);
-    //Psuedocode: mem[r2 + imm] <- r1
+    //Pseudocode: mem[r2 + imm] <- r1
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint8_t r2 = vpx2_mem_f8();
@@ -1144,7 +1144,7 @@ static inline void vpx2_isa_jmp(){
     //Jumps (Long) to specific address that is PC += imm
     //===========================================
     //C syntax: registers[PC] = registers[PC] + imm;
-    //Psuedocode: PC <- PC + imm
+    //Pseudocode: PC <- PC + imm
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -1159,7 +1159,7 @@ static inline void vpx2_isa_jmpr(){
     //Jumps (Long) to specific address that is PC = imm + r1
     //===========================================
     //C syntax: registers[PC] = r1 + imm;
-    //Psuedocode: PC <- r1 + imm
+    //Pseudocode: PC <- r1 + imm
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -1178,7 +1178,7 @@ static inline void vpx2_isa_jmps(){
     //Jumps (Short) to specific address that is PC += imm
     //===========================================
     //C syntax: registers[PC] = registers[PC] + imm;
-    //Psuedocode: PC <- PC + imm
+    //Pseudocode: PC <- PC + imm
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -1193,7 +1193,7 @@ static inline void vpx2_isa_jmprs(){
     //Jumps (Short) to specific address that is PC = imm + r1
     //===========================================
     //C syntax: registers[PC] = r1 + imm;
-    //Psuedocode: PC <- r1 + imm
+    //Pseudocode: PC <- r1 + imm
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -1215,7 +1215,7 @@ static inline void vpx2_isa_zjmp(){
     //C syntax: if(registers[r1] == 0){
     //registers[PC] = registers[PC] + imm;
     //}
-    //Psuedocode: PC <- PC + imm : r1 == 0
+    //Pseudocode: PC <- PC + imm : r1 == 0
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -1240,7 +1240,7 @@ static inline void vpx2_isa_ejmp(){
     //C syntax: if(registers[r1] == registers[r2]){
     //registers[PC] = registers[PC] + imm;
     //}
-    //Psuedocode: PC <- PC + imm : r1 == r2
+    //Pseudocode: PC <- PC + imm : r1 == r2
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -1267,7 +1267,7 @@ static inline void vpx2_isa_nejmp(){
     //C syntax: if(registers[r1] != registers[r2]){
     //registers[PC] = registers[PC] + imm;
     //}
-    //Psuedocode: PC <- PC + imm : r1 != r2
+    //Pseudocode: PC <- PC + imm : r1 != r2
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -1294,7 +1294,7 @@ static inline void vpx2_isa_gjmp(){
     //C syntax: if(registers[r1] > registers[r2]){
     //registers[PC] = registers[PC] + imm;
     //}
-    //Psuedocode: PC <- PC + imm : r1 > r2
+    //Pseudocode: PC <- PC + imm : r1 > r2
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -1321,7 +1321,7 @@ static inline void vpx2_isa_gejmp(){
     //C syntax: if(registers[r1] >= registers[r2]){
     //registers[PC] = registers[PC] + imm;
     //}
-    //Psuedocode: PC <- PC + imm : r1 >= r2
+    //Pseudocode: PC <- PC + imm : r1 >= r2
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -1348,7 +1348,7 @@ static inline void vpx2_isa_sjmp(){
     //C syntax: if(registers[r1] < registers[r2]){
     //registers[PC] = registers[PC] + imm;
     //}
-    //Psuedocode: PC <- PC + imm : r1 < r2
+    //Pseudocode: PC <- PC + imm : r1 < r2
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -1375,7 +1375,7 @@ static inline void vpx2_isa_sejmp(){
     //C syntax: if(registers[r1] <= registers[r2]){
     //registers[PC] = registers[PC] + imm;
     //}
-    //Psuedocode: PC <- PC + imm : r1 <= r2
+    //Pseudocode: PC <- PC + imm : r1 <= r2
     //===========================================
 
     uint32_t pc = vpx2_rreg(VPX_RPC) - 1; //Gets PC - 1 to remove opcode index
@@ -1402,7 +1402,7 @@ static inline void vpx2_isa_cjmp(){
     //WARNING: this is almost fully useless. So it may be depracated.
     //===========================================
     //C syntax: switch(condition){case 0: ...}
-    //Psuedocode: f(x, y) ?: cond
+    //Pseudocode: f(x, y) ?: cond
     //===========================================
 
     uint8_t con = vpx2_mem_f8(); //Get condition code.
@@ -1430,7 +1430,7 @@ static inline void vpx2_isa_push8(){
     //Push 1B value from r1 (LSB) into the stack.
     //===========================================
     //C syntax: append_stack(registers[r1])
-    //Psuedocode: mem[sp] <- r1 : sp+=1
+    //Pseudocode: mem[sp] <- r1 : sp+=1
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
 
@@ -1445,7 +1445,7 @@ static inline void vpx2_isa_push16(){
     //Push 2B value from r1 (LSW) into the stack.
     //===========================================
     //C syntax: append_stack(registers[r1])
-    //Psuedocode: mem[sp] <- r1 : sp+=2
+    //Pseudocode: mem[sp] <- r1 : sp+=2
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
 
@@ -1460,7 +1460,7 @@ static inline void vpx2_isa_push32(){
     //Push 4B value from r1 into the stack.
     //===========================================
     //C syntax: append_stack(registers[r1])
-    //Psuedocode: mem[sp] <- r1 : sp+=4
+    //Pseudocode: mem[sp] <- r1 : sp+=4
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
 
@@ -1475,7 +1475,7 @@ static inline void vpx2_isa_pop8(){
     //Pop value (1B) from stack and write to r1
     //===========================================
     //C syntax: sp--; registers[r1] = mem[sp];
-    //Psuedocode: sp-=1 : r1 <- mem[sp]
+    //Pseudocode: sp-=1 : r1 <- mem[sp]
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
 
@@ -1489,7 +1489,7 @@ static inline void vpx2_isa_pop16(){
     //Pop value (2B) from stack and write to r1
     //===========================================
     //C syntax: sp-=2; registers[r1] = mem[sp];
-    //Psuedocode: sp-=2 : r1 <- mem[sp]
+    //Pseudocode: sp-=2 : r1 <- mem[sp]
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
 
@@ -1502,7 +1502,7 @@ static inline void vpx2_isa_pop32(){
     //Pop value (4B) from stack and write to r1
     //===========================================
     //C syntax: sp-=4; registers[r1] = mem[sp];
-    //Psuedocode: sp-=4 : r1 <- mem[sp]
+    //Pseudocode: sp-=4 : r1 <- mem[sp]
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
 
@@ -1517,7 +1517,7 @@ static inline void vpx2_isa_call(){
     //after storing return address to the stack.
     //===========================================
     //C syntax: append_stack(registers[PC]); registers[PC] = registers[PC] + imm;
-    //Psuedocode: mem[sp] <- PC : PC <- PC + imm 
+    //Pseudocode: mem[sp] <- PC : PC <- PC + imm 
     //===========================================
     uint32_t rpc = vpx2_rreg(VPX_RPC) - 1; //Relative increment PC.
     
@@ -1535,7 +1535,7 @@ static inline void vpx2_isa_callr(){
     //after storing return address to the stack.
     //===========================================
     //C syntax: append_stack(registers[PC]); registers[PC] = registers[r1] + imm;
-    //Psuedocode: mem[sp] <- PC : PC <- r1 + imm 
+    //Pseudocode: mem[sp] <- PC : PC <- r1 + imm 
     //===========================================
     uint8_t r1 = vpx2_mem_f8();
     uint32_t imm = vpx2_mem_f32();
@@ -1554,7 +1554,7 @@ static inline void vpx2_isa_ret(){
     //Return to address that is in the stack. PC = mem[sp]
     //===========================================
     //C syntax: registers[PC] = mem[sp];
-    //Psuedocode: PC <- mem[sp];
+    //Pseudocode: PC <- mem[sp];
     //===========================================
 
 
